@@ -5,51 +5,59 @@
     android:id="@+id/loginback"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:alpha="0.75"
-    tools:context=".MainActivity"
+    android:alpha="0.8"
+    tools:context=".Firstactivity"
     tools:visibility="visible">
 
+
     <ImageView
-        android:id="@+id/loginbtn"
+        android:id="@+id/backimg"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/background_image"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/loginback" />
 
-    <Button
-        android:id="@+id/signUpBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="70dp"
-        android:alpha="1"
-        android:background="@drawable/signup"
-        android:text="Sign up"
-        app:layout_constraintBottom_toBottomOf="@+id/loginbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#000000" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:layout_width="353dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/signup"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/backimg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUpBtn" />
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="1"
+            android:background="@drawable/signup"
+            android:text="@string/sign_up"
+            app:rippleColor="#000000" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/signup"
+            android:text="@string/login" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
