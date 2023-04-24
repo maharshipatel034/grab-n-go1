@@ -13,5 +13,10 @@ class Firstactivity : AppCompatActivity() {
             val inten=Intent(this,signinactivity::class.java)
             startActivity(inten)
         }
+        val buttonclick1=findViewById<Button>(R.id.loginbtn)
+        buttonclick1.setOnClickListener{
+            val inten1=Intent(this,LoginActivity::class.java)
+            startActivity(inten1)
+        }
     }
 }
