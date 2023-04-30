@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="220dp"
+        android:alpha="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signinbgshape" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="300dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signinbgshape" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="152dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="303dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:alpha="1"
+            android:ems="10"
+            android:hint="@string/departure"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="@string/destination"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:id="@+id/linlay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/searchCreateButton"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/squareish_button_background"
+                android:textColor="@color/text_color01"
+                android:textOff="Search"
+                android:textOn="Search"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/driverPassengerToggle"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/squareish_button_background"
+                android:textColor="@color/text_color01"
+                android:textOff="passenger"
+                android:textOn="Driver"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/searchCreateButton"
+        android:layout_width="283dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="1"
+        android:background="@drawable/squareish_button_background"
+        android:textColor="@color/text_color01"
+        android:textOff="Show all available trips"
+        android:textOn="Show all available trips"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

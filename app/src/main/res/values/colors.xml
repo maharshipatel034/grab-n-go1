@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="card_bg">#151019</color>
+    <color name="main_button_color">#3E3749</color>
+    <color name="text_color01">#B79CE4</color>
+    <color name="that_red">#C61C30</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#ffffff</color>
 </resources>
