@@ -7,4 +7,5 @@
     <string name="departure">Departure</string>
     <string name="show_trips">Show All Trips</string>
     <string name="intro_text">Find yourself a trip to any given destination, or create your own and enjoy the company of cheerful passengers!</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

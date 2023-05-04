@@ -109,7 +109,7 @@
     </LinearLayout>
 
     <ToggleButton
-        android:id="@+id/searchCreateButton"
+        android:id="@+id/searchCreateButton1"
         android:layout_width="283dp"
         android:layout_height="56dp"
         android:layout_marginTop="30dp"
