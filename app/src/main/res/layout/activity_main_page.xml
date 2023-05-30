@@ -89,8 +89,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/squareish_button_background"
                 android:textColor="@color/text_color01"
-                android:textOff="Search"
-                android:textOn="Search"
+                android:textOff="Map Search"
+                android:textOn="Map Search"
                 android:textSize="16sp" />
 
             <ToggleButton

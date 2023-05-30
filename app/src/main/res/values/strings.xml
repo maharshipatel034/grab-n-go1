@@ -8,4 +8,11 @@
     <string name="show_trips">Show All Trips</string>
     <string name="intro_text">Find yourself a trip to any given destination, or create your own and enjoy the company of cheerful passengers!</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_offerride">Offerride</string>
+    <string name="title_activity_nav_code">NavCode</string>
+    <string name="title_activity_nav">Nav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
 </resources>

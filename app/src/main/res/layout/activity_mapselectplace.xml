@@ -6,7 +6,7 @@
     android:background="#0D0366"
     android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -17,8 +17,8 @@
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            tools:context=".MapsActivity" />
+            android:layout_height="match_parent"
+            tools:context=".Mapselectplace" />
 
     </LinearLayout>
 
@@ -38,19 +38,35 @@
             android:layout_marginEnd="5dp"
             android:paddingHorizontal="10dp"
             android:paddingVertical="10dp"
-            android:text="Please enter the place where you would like to be picked  up"
+            android:text="Please enter the pickup and destination place"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#BAB4B4"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/textPickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="05dp"
+            android:hint="pickup place"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#BAB4B4"
+            android:textColorHint="#BAB4B4"
+            android:textStyle="bold|italic" />
+
+        <EditText
             android:id="@+id/textDestination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
-            android:layout_margin="20dp"
-            android:hint="Enter here"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="destination place"
             android:padding="10dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#BAB4B4"

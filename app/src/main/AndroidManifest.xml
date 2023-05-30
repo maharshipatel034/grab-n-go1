@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DECarpooling"
         tools:targetApi="31">
-
+<!--        <activity-->
+<!--            android:name=".Nav"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_nav" />-->
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -22,20 +25,32 @@
              Once you have your API key (it starts with "AIza"), define a new property in your
              project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-             AIzaSyCXYBV2zvJznVBAfjvsqkYnBUL72Kx4-eM
         -->
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCXYBV2zvJznVBAfjvsqkYnBUL72Kx4-eM" />
+            android:value="YOUR_API_KEY" />
 
+        <activity
+            android:name=".Mapselectplace"
+            android:exported="false"
+            android:label="Mapselectplace" />
+        <activity
+            android:name=".getride"
+            android:exported="false" />
+        <activity
+            android:name=".Offerride"
+            android:exported="false"
+            android:label="offerride"
+            android:theme="@style/Theme.DECarpooling" />
+        <activity
+            android:name=".choosecar"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".MainActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".MapsActivity"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
-        <activity
-            android:name=".MainPage"
-            android:exported="false" />
+            android:label="maps" />
         <activity
             android:name=".MainPage"
             android:exported="false" />
@@ -57,6 +72,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
