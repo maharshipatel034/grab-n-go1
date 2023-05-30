@@ -19,5 +19,10 @@ class choosecar : AppCompatActivity() {
             val inte1= Intent(this,getride::class.java)
             startActivity(inte1)
         }
+        val buttonclick=findViewById<Button>(R.id.btn3)
+        buttonclick.setOnClickListener{
+            val inte1= Intent(this,ContactUsActivity::class.java)
+            startActivity(inte1)
+        }
     }
 }

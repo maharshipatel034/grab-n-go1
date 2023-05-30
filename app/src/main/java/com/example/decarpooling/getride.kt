@@ -3,7 +3,6 @@ package com.example.decarpooling
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 
 class getride : AppCompatActivity() {
@@ -14,6 +13,11 @@ class getride : AppCompatActivity() {
         buttoncli.setOnClickListener{
             val inte1= Intent(this,MapsActivity::class.java)
             startActivity(inte1)
+        }
+        val buttonclic=findViewById<Button>(R.id.search)
+        buttonclic.setOnClickListener{
+            val inte2= Intent(this,Mapselectplace::class.java)
+            startActivity(inte2)
         }
     }
 }

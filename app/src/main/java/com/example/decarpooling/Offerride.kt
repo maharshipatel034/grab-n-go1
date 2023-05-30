@@ -14,5 +14,10 @@ class Offerride : AppCompatActivity() {
             val inte1= Intent(this,MapsActivity::class.java)
             startActivity(inte1)
         }
+        val buttonclic=findViewById<Button>(R.id.search)
+        buttonclic.setOnClickListener{
+            val inte2= Intent(this,Mapselectplace::class.java)
+            startActivity(inte2)
+        }
     }
 }
