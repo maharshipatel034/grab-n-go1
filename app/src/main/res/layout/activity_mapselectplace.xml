@@ -63,7 +63,7 @@
             android:id="@+id/textDestination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView"
+            android:layout_below="@+id/textPickup"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:hint="destination place"
@@ -72,9 +72,37 @@
             android:textColor="#BAB4B4"
             android:textColorHint="#BAB4B4"
             android:textStyle="bold|italic" />
+<!--        <EditText-->
+<!--            android:id="@+id/textPickup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textView"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginBottom="05dp"-->
+<!--            android:hint="pickup place"-->
+<!--            android:padding="10dp"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:textColor="#BAB4B4"-->
+<!--            android:textColorHint="#BAB4B4"-->
+<!--            android:textStyle="bold|italic" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/textDestination"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textView"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:hint="destination place"-->
+<!--            android:padding="10dp"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:textColor="#BAB4B4"-->
+<!--            android:textColorHint="#BAB4B4"-->
+<!--            android:textStyle="bold|italic" />-->
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button1"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
@@ -82,5 +110,8 @@
             android:nestedScrollingEnabled="false"
             android:onClick="buttonOnClick"
             android:text="Go!" />
+
+
+
     </LinearLayout>
 </LinearLayout>
